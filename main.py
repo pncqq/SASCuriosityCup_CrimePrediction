@@ -1,16 +1,17 @@
-# This is a sample Python script.
+import pandas as pd
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#### Crime prediction
 
+# Nazwa pliku .data
+nazwa_pliku_data = 'dane.data'
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Określenie separatora (np. ',', '\t', ';')
+separator = ','
 
+# Wczytywanie danych bez nagłówków
+data = pd.read_csv(nazwa_pliku_data, sep=separator, header=None)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Zapis do pliku CSV
+data.to_csv('dane.csv', index=False, header=False)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
