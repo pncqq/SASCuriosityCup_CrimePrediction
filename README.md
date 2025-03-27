@@ -24,7 +24,7 @@ Wykorzystano zbiór danych **Communities and Crime** dostępny w repozytorium UC
    git clone https://github.com/pncqq/SASCuriosityCup_CrimePrediction.git
    cd SASCuriosityCup_CrimePrediction
 
-    Zainstaluj wymagane biblioteki:
+2. Zainstaluj wymagane biblioteki:
 
 pip install -r requirements.txt
 
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 pip install pandas numpy scikit-learn matplotlib jupyter
 
-Uruchom Jupyter Notebook:
+3. Uruchom Jupyter Notebook:
 
     jupyter notebook crime_prediction.ipynb
 
